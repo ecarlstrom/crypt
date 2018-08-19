@@ -29,3 +29,4 @@ console.log(player.place);
 console.log(player.items);
 
 // test for ignore file
+// test 2
