@@ -23,7 +23,7 @@ let player = new Character({
   // 'status':
 });
 
-// console.log(player.name);
-// console.log(player.health);
-// console.log(player.place);
-// console.log(player.items);
+console.log(player.name);
+console.log(player.health);
+console.log(player.place);
+console.log(player.items);
