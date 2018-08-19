@@ -27,3 +27,5 @@ console.log(player.name);
 console.log(player.health);
 console.log(player.place);
 console.log(player.items);
+
+// test for ignore file
