@@ -69,4 +69,70 @@ function showPlayerInfo(playerName, playerHealth, playerPlace, playerItems) {
 // showPlayerItems('Player', 'inventory 1, inventory 2, inventory 3');
 // showPlayerInfo('Player', 50, 'somewhere', 'inventory item, 2, 3');
 
+// adding function versions that return rather than log the results
+
+function getPlayerName(playerName) {
+  return playerName;
+}
+
+function getPlayerHealth(playerName, playerHealth) {
+  return (`${playerName} has health ${playerHealth}`);
+}
+
+function getPlayerPlace(playerName, playerPlace) {
+  return (`${playerName} is in ${playerPlace}`);
+}
+
+function getPlayerItems(playerName, playerItems) {
+  return (`${playerName} possesses ${playerItems}`);
+}
+
+// display formatting function
+
+function borderCreate() {
+  return ('=============================');
+}
+
+// cumulative return function
+
+function getPlayerInfo(playerName, playerHealth, playerPlace, playerItems) {
+
+  let playerInfo = '';
+
+  playerInfo = '\n' + getPlayerName(playerName);
+
+  playerInfo += '\n' + borderCreate();
+  playerInfo += '\n' + getPlayerHealth(playerName, playerHealth);
+  playerInfo += '\n' + getPlayerPlace(playerName, playerPlace);
+  playerInfo += '\n' + getPlayerItems(playerName, playerItems);
+  playerInfo += '\n' + borderCreate();
+
+  playerInfo += '\n';
+
+  return playerInfo;
+}
+
+// test objects for return functions
+
+// let player1 = {
+//   'name': 'Player 1',
+//   'place': 'The Dungeon of Doom',
+//   'health': '50',
+//   'items': 'one, two, three'
+// }
+//
+// let player2 = {
+//   'name': 'Player 2',
+//   'place': 'The Old Library',
+//   'health': '50',
+//   'items': 'dagger, potion, sack of gold'
+// }
+// console.log(getPlayerInfo(player1.name, player1.health, player1.place, player1.items));
+// console.log(getPlayerInfo(player2.name, player2.health, player2.place, player2.items));
+
+
+
+
+
+
 // end player display functions
