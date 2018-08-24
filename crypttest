@@ -28,10 +28,21 @@ let player = new Character({
 // console.log(player.place);
 // console.log(player.items);
 
-// functions to display player information
+// function to display player information
+
+function showPlayerInfo() {
+  console.log(player.name);
+  console.log("-------------------------"); // formatting
+  console.log(`${player.name} is in ${player.place}`);
+  console.log(`${player.name} has health ${player.health}`);
+  console.log("-------------------------");
+  console.log("");
+}
+
+showPlayerInfo();
 
 function showPlayerName(playerName) {
-  console.log(`Player name is ${playerName}`);
+  console.log(playerName);
 }
 
 function showPlayerHealth(playerName, playerHealth) {
@@ -46,27 +57,8 @@ function showPlayerItems(playerName, playerItems) {
   console.log(`${playerName} possesses ${playerItems}`);
 }
 
-// other functions for new attributes will be added
 
-// cumulative function
-
-function showPlayerInfo(playerName, playerHealth, playerPlace, playerItems) {
-  showPlayerName(playerName);
-  console.log(''); // formatting
-  console.log("-------------------------");
-
-  showPlayerHealth(playerName, playerHealth);
-  showPlayerPlace(playerName, playerPlace);
-  showPlayerItems(playerName, playerItems);
-
-  console.log("-------------------------");
-  console.log('');
-}
-
-// showPlayerName('Player');
-// showPlayerHealth('Player', 50);
-// showPlayerPlace('Player', 'somewhere');
-// showPlayerItems('Player', 'inventory 1, inventory 2, inventory 3');
-// showPlayerInfo('Player', 50, 'somewhere', 'inventory item, 2, 3');
-
-// end player display functions
+showPlayerName('Player');
+showPlayerHealth('Player', 50);
+showPlayerPlace('Player', 'somewhere');
+showPlayerItems('Player', 'inventory 1, inventory 2, inventory 3');
