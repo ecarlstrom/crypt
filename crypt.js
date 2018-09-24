@@ -35,7 +35,7 @@ function showPlayerName(playerName) {
 }
 
 function showPlayerHealth(playerName, playerHealth) {
-  console.log(`${playerName} has health ${playerHealth}`);
+  console.log(`${playerName} has ${playerHealth} health`);
 }
 
 function showPlayerPlace(playerName, playerPlace) {
