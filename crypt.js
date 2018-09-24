@@ -95,16 +95,16 @@ function borderCreate() {
 
 // cumulative return function
 
-function getPlayerInfo(playerName, playerHealth, playerPlace, playerItems) {
+function getPlayerInfo(player) {
 
   let playerInfo = '';
 
-  playerInfo = '\n' + getPlayerName(playerName);
+  playerInfo = '\n' + player.name;
 
   playerInfo += '\n' + borderCreate();
-  playerInfo += '\n' + getPlayerHealth(playerName, playerHealth);
-  playerInfo += '\n' + getPlayerPlace(playerName, playerPlace);
-  playerInfo += '\n' + getPlayerItems(playerName, playerItems);
+  playerInfo += '\n' + getPlayerHealth(player.name, player.health);
+  playerInfo += '\n' + getPlayerPlace(player.name, player.place);
+  playerInfo += '\n' + getPlayerItems(player.name, player.items);
   playerInfo += '\n' + borderCreate();
 
   playerInfo += '\n';
@@ -114,25 +114,20 @@ function getPlayerInfo(playerName, playerHealth, playerPlace, playerItems) {
 
 // test objects for return functions
 
-// let player1 = {
-//   'name': 'Player 1',
-//   'place': 'The Dungeon of Doom',
-//   'health': '50',
-//   'items': 'one, two, three'
-// }
-//
-// let player2 = {
-//   'name': 'Player 2',
-//   'place': 'The Old Library',
-//   'health': '50',
-//   'items': 'dagger, potion, sack of gold'
-// }
-// console.log(getPlayerInfo(player1.name, player1.health, player1.place, player1.items));
-// console.log(getPlayerInfo(player2.name, player2.health, player2.place, player2.items));
+let player1 = {
+  'name': 'Player 1',
+  'place': 'The Dungeon of Doom',
+  'health': '50',
+  'items': 'one, two, three'
+}
 
+let player2 = {
+  'name': 'Player 2',
+  'place': 'The Old Library',
+  'health': '50',
+  'items': 'dagger, potion, sack of gold'
+}
+console.log(getPlayerInfo(player1));
+console.log(getPlayerInfo(player2));
 
-
-
-
-
-// end player display functions
+//end player display functions
