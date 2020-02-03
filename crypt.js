@@ -12,6 +12,7 @@ class Character {
   /* poison() {
     return (this.health - 1);
   } */ // general idea for a poison status ailment, losing health each turn or action. would call this later whenever required.
+  // additional effects can take the forms of similar ideas or buffs to certain stats
 }
 
 let player = new Character({
